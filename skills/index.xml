@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Skills on Ishan Jandaur Portfolio</title>
+    <link>https://ishanjandaur.com/skills/</link>
+    <description>Recent content in Skills on Ishan Jandaur Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ishanjandaur.com/skills/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Skills</title>
+      <link>https://ishanjandaur.com/skills/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ishanjandaur.com/skills/skills/</guid>
+      <description>Coding Languages: MATLAB SimuLink Python Computer Aided Drafting: SolidWorks Autodesk Fusion 360 Geometric Dimensioning and Tolerancing Manufacturing: Design for Manufacturability Machining Welding Hand Tools 3D Printing Laser Printing </description>
+    </item>
+    
+  </channel>
+</rss>

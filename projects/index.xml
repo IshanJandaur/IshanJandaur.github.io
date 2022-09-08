@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Ishan Jandaur Portfolio</title>
+    <link>https://ishanjandaur.com/projects/</link>
+    <description>Recent content in Projects on Ishan Jandaur Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://ishanjandaur.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>https://ishanjandaur.com/projects/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ishanjandaur.com/projects/projects/</guid>
+      <description>Senior Design Project - Barker Bird Animatronic My senior design project consisted of developing a robotic bird based on Disneyland’s Barker Bird. I worked with three other engineers to design a 3D printed skeleton that sang, flapped and extended its wings, and rotated on a base. The project consisted of multiple electromechanical components and customizable code that will be used as a teaching tool for students that want to learn about animatronics.</description>
+    </item>
+    
+  </channel>
+</rss>

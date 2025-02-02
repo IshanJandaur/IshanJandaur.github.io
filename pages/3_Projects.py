@@ -19,15 +19,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Display original barker bird
-st.markdown(
-    """
-    <div style="text-align: center;">
-        <img src="barkerbird.png" width="300">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+col1, col2, col3 = st.columns([1, 2, 1])
+
+# Display image in the center column
+with col2:
+    st.image("barkerbird.jpg", width=300) 
+
+# # Display original barker bird
+# st.image("barkerbird.png", width=300)
 
 # Embed video of Barker Bird prototype working
 video_url = "https://www.youtube.com/watch?v=TDqJGbDxhho" 

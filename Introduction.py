@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-from Pillow import Image
 
 # Set page title
 st.set_page_config(page_title="Introduction Page", layout="centered")
@@ -8,20 +7,16 @@ st.set_page_config(page_title="Introduction Page", layout="centered")
 # Introduction
 st.markdown("<h2 style='text-align: center;'>Hi, I'm Ishan!</h2>", unsafe_allow_html=True)
 
-# Profile picture
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center; padding: 20px;">
-        <img src="imnage_path" width="200">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+col1, col2, col3 = st.columns([1, 2, 1])
 
-col1, col2 = st.columns([1, 1])  
+# Display image in the center column
+with col2:
+    st.image("profile_pic.jpg", width=300) 
+
+col1, col2, col3, col4, col5 = st.columns([1, 2, 1, 2, 1])  
 
 # Resume Download Button
-with col1:
+with col2:
     with open("Ishan_Jandaur_Resume.pdf", "rb") as file:
         st.download_button(label="📄 Download Resume",
                            data=file,
@@ -29,7 +24,7 @@ with col1:
                            mime="application/pdf")
 
 # Linkedin URL Link
-with col2:
+with col4:
     st.markdown("""
         <a href="https://www.linkedin.com/in/ishanjandaur/" target="_blank">
             <button style="
@@ -38,7 +33,7 @@ with col2:
                 padding: 10px 20px; 
                 border: none; 
                 border-radius: 5px;
-                font-size: 16px;
+                font-size: 14px;
                 cursor: pointer;">
                 🔗 Connect on LinkedIn
             </button>
@@ -65,8 +60,7 @@ def show_photo():
     # Get the current photo path based on the counter
     photo_path = paths_images[st.session_state.counter]
     # Open and display the image using PIL
-    photo = Image.open(photo_path)
-    col2.image(photo, caption=None)
+    col2.image(photo_path, caption=None)
 
     # Increment the counter, and wrap around when it reaches the end
     st.session_state.counter = (st.session_state.counter + 1) % len(paths_images)
@@ -89,6 +83,3 @@ col1.markdown("""
 # Show the button to trigger image change
 show_btn = col1.button("Click button to show pictures ⏭️", on_click=show_photo)
 
-# # Optionally show the current photo info or description
-# if st.session_state.counter < len(paths_images):
-#     st.write(f"Showing image {st.session_state.counter + 1} of {len(paths_images)}")

@@ -1,4 +1,1 @@
 streamlit
-pip
-setuptools
-Pillow

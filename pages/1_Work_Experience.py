@@ -55,17 +55,10 @@ with col2:
     st.write("• Led Site Acceptance Testing (**SAT**) on 3 assembly machines")  
 
 #Picture of cylindrical cells
-st.markdown("""
-    <style>
-        .centered-image {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-    <div class="centered-image">
-        <img src="lyten_1.jpg" width="200">
-    </div>
-""", unsafe_allow_html=True)
+col1, col2, col3 = st.columns([1, 2, 1])
+
+with col2:
+    st.image("lyten-1.jpg", width=700) 
 
 #Divider
 st.markdown("""<div style="height: 5px; background-color: #69ADFF; margin: 20px 0;"></div>""", unsafe_allow_html=True)
@@ -87,17 +80,10 @@ with col2:
     st.write("• Assisted PCB fabrication line by troubleshooting defects")  
 
 #Picture of Serve Robotics robot
-st.markdown("""
-    <style>
-        .centered-image {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
-    <div class="centered-image">
-        <img src="serve_robotics.jpeg" width="200">
-    </div>
-""", unsafe_allow_html=True)
+col1, col2, col3 = st.columns([1, 2, 1])
+
+with col2:
+    st.image("serve-robotics.jpeg", width=300) 
 
 st.markdown("""<div style="height: 5px; background-color: #69ADFF; margin: 20px 0;"></div>""", unsafe_allow_html=True)
 

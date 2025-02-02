@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from PIL import Image
+from Pillow import Image
 
 # Set page title
 st.set_page_config(page_title="Introduction Page", layout="centered")
